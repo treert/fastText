@@ -10,3 +10,7 @@ result
 website/node_modules/
 package-lock.json
 node_modules/
+/build/
+/.vscode/
+/Users/
+/python/fasttext_module/fasttext.egg-info/
