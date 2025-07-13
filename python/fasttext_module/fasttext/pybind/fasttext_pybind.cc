@@ -6,6 +6,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+// https://github.com/facebookresearch/fastText/pull/1352/files
+#if defined(_MSC_VER)
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+#endif
+
 #include <args.h>
 #include <autotune.h>
 #include <densematrix.h>
