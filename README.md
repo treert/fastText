@@ -1,3 +1,8 @@
+# 特殊说明
+打算用 fasttext 来检测语言类型的，实际使用效果非常差。不如 langdetect，更不如 lingua-language-detector。
+然后官方库在windows上编译报错，这儿修复了报错问题。至少能 pip install . 成功了。
+记录下，算个备份吧。
+
 # fastText
 [fastText](https://fasttext.cc/) is a library for efficient learning of word representations and sentence classification.
 
@@ -5,28 +10,31 @@
 
 ## Table of contents
 
-* [Resources](#resources)
-   * [Models](#models)
-   * [Supplementary data](#supplementary-data)
-   * [FAQ](#faq)
-   * [Cheatsheet](#cheatsheet)
-* [Requirements](#requirements)
-* [Building fastText](#building-fasttext)
-   * [Getting the source code](#getting-the-source-code)
-   * [Building fastText using make (preferred)](#building-fasttext-using-make-preferred)
-   * [Building fastText using cmake](#building-fasttext-using-cmake)
-   * [Building fastText for Python](#building-fasttext-for-python)
-* [Example use cases](#example-use-cases)
-   * [Word representation learning](#word-representation-learning)
-   * [Obtaining word vectors for out-of-vocabulary words](#obtaining-word-vectors-for-out-of-vocabulary-words)
-   * [Text classification](#text-classification)
-* [Full documentation](#full-documentation)
-* [References](#references)
-   * [Enriching Word Vectors with Subword Information](#enriching-word-vectors-with-subword-information)
-   * [Bag of Tricks for Efficient Text Classification](#bag-of-tricks-for-efficient-text-classification)
-   * [FastText.zip: Compressing text classification models](#fasttextzip-compressing-text-classification-models)
-* [Join the fastText community](#join-the-fasttext-community)
-* [License](#license)
+- [特殊说明](#特殊说明)
+- [fastText](#fasttext)
+	- [Table of contents](#table-of-contents)
+	- [Resources](#resources)
+		- [Models](#models)
+		- [Supplementary data](#supplementary-data)
+		- [FAQ](#faq)
+		- [Cheatsheet](#cheatsheet)
+	- [Requirements](#requirements)
+	- [Building fastText](#building-fasttext)
+		- [Getting the source code](#getting-the-source-code)
+		- [Building fastText using make (preferred)](#building-fasttext-using-make-preferred)
+		- [Building fastText using cmake](#building-fasttext-using-cmake)
+		- [Building fastText for Python](#building-fasttext-for-python)
+	- [Example use cases](#example-use-cases)
+		- [Word representation learning](#word-representation-learning)
+		- [Obtaining word vectors for out-of-vocabulary words](#obtaining-word-vectors-for-out-of-vocabulary-words)
+		- [Text classification](#text-classification)
+	- [Full documentation](#full-documentation)
+	- [References](#references)
+		- [Enriching Word Vectors with Subword Information](#enriching-word-vectors-with-subword-information)
+		- [Bag of Tricks for Efficient Text Classification](#bag-of-tricks-for-efficient-text-classification)
+		- [FastText.zip: Compressing text classification models](#fasttextzip-compressing-text-classification-models)
+	- [Join the fastText community](#join-the-fasttext-community)
+	- [License](#license)
 
 ## Resources
 
